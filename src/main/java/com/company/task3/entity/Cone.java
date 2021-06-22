@@ -1,20 +1,18 @@
 package com.company.task3.entity;
 
 
-import com.company.task3.util.IdGenerator;
-
 public class Cone extends Shape {// implements Observable {
     private Point center;
     private double radius;
     private double height;
-   // IdGenerator coneId = new IdGenerator();
+    // IdGenerator coneId = new IdGenerator();
     //  private ArrayList<Observer> observers = new ArrayList<>();
 
     public Cone(Point center, double radius, double height) {
         this.center = center;
         this.radius = radius;
         this.height = height;
-       // coneId.generateId();
+        // coneId.generateId();
 
     }
 

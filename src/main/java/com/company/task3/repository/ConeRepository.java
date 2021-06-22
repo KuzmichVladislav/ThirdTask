@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConeRepository {
+
     private List<Cone> cones = new ArrayList<>();
 
     public boolean add(Cone cone) {

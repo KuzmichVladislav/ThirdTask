@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -27,7 +28,7 @@ public class DataReaderImpl implements DataReader {
 
         try (Stream<String> streamLines = Files.lines(dataPath)) {
 
-            result = streamLines.filter(x -> ShapeValidator.validateStringArray(x)).collect(Collectors.toList());
+            result = streamLines.filter(x -> ShapeValidator.validateStringCone(x)).collect(Collectors.toList());
 
             if (result.isEmpty()) {
                 logger.error("no valid row found");
@@ -41,5 +42,17 @@ public class DataReaderImpl implements DataReader {
             throw new ShapeException(e);
         }
         return result;
+    }
+
+    public static void main(String[] args) throws ShapeException {
+        DataReaderImpl a = new DataReaderImpl();
+        List<String> b = new ArrayList<>();
+        try {
+            b = a.ShapeList("src/main/resources/data/arrayFile.txt");
+        } catch (ShapeException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(b.toString());
     }
 }

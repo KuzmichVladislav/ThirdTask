@@ -2,22 +2,23 @@ package com.company.task3.factory;
 
 import com.company.task3.entity.Cone;
 import com.company.task3.entity.Point;
-import com.company.task3.entity.Shape;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConeFactory extends ShapeFactory {
-    @Override
-    public Shape createShape() {
-        return null;
+public class ConeFactory {
+
+    public Cone createShape(Point point, double radius, double height) {
+        return new Cone(point, radius, height);
     }
 
-    /*@Override
-    public Cone createShape() {
-        return new Cone(Point p, double radius, double height);
-    }*/
-    public List<Cone> createShape(double[] ... params) {
+    public Cone createShape(double x, double y, double z, double radius, double height) {
+        Point point = new Point(x, y, z);
+        return new Cone(point, radius, height);
+    }
+
+    public List<Cone> createShapeList(double[]... params) {
+
         return new ArrayList<>();
     }
 }

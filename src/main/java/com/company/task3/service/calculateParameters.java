@@ -4,7 +4,9 @@ import com.company.task3.entity.Cone;
 
 public interface calculateParameters {
 
-    double calculateSurfaceArea(Cone cone);
+    double calculateSurfaceArea(Cone designСone);
 
-    double calculateShapeVolume(Cone cone);
+    double calculateShapeVolume(Cone designСone);
+
+    double calculateGeneratrixLength(Cone designСone);
 }
