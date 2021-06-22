@@ -1,1 +1,4 @@
-[ERROR] 2021-06-22 17:04:30,465 DataReaderImpl.ShapeList() - no valid row found
+[INFO ] 2021-06-22 22:10:52,684 ShapeValidator.validateStringCone() - not valid row 2.47 -7.65 0.93 -7.27 14.78
+[INFO ] 2021-06-22 22:10:52,692 ShapeValidator.validateStringCone() - not valid row 23.82 31.25 35.63e 33.41 39.31
+[INFO ] 2021-06-22 22:10:52,694 ShapeValidator.validateStringCone() - not valid row 8.63 3.61 26.67 40.09 -16.56
+[INFO ] 2021-06-22 22:10:52,695 ShapeValidator.validateStringCone() - not valid row 40.10 24.32 41.89 z5.26 9.23

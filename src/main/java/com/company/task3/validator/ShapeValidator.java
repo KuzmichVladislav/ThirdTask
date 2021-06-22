@@ -1,13 +1,25 @@
 package com.company.task3.validator;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ShapeValidator {
 
-    private static final String REGEX_STRING_CONE = "([\\d+-]*\\)*\\(*\\s*)+";
+    static final Logger logger = LogManager.getLogger();
 
-    private ShapeValidator() {
-    }
+    private static final String REGEX_STRING_CONE = "^(-?\\d+(\\.\\d*)?\\s){3}(\\d+(\\.\\d*)?\\s)(\\d+(\\.\\d*)?)$";
+
 
     public static boolean validateStringCone(String string) {
-        return string.matches(REGEX_STRING_CONE);
+        if (string.matches(REGEX_STRING_CONE)) {
+            return true;
+        } else {
+            logger.warn("not valid row " + string);
+            return false;
+        }
+
+    }
+
+    private ShapeValidator() {
     }
 }
