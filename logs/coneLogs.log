@@ -1,4 +1,5 @@
-[WARN ] 2021-06-22 22:11:07,635 ShapeValidator.validateStringCone() - not valid row 2.47 -7.65 0.93 -7.27 14.78
-[WARN ] 2021-06-22 22:11:07,644 ShapeValidator.validateStringCone() - not valid row 23.82 31.25 35.63e 33.41 39.31
-[WARN ] 2021-06-22 22:11:07,646 ShapeValidator.validateStringCone() - not valid row 8.63 3.61 26.67 40.09 -16.56
-[WARN ] 2021-06-22 22:11:07,647 ShapeValidator.validateStringCone() - not valid row 40.10 24.32 41.89 z5.26 9.23
+[WARN ] 2021-06-23 13:51:34,371 ShapeValidator.validateStringCone() - not valid row 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-06-23 13:51:34,375 ShapeValidator.validateStringCone() - not valid row 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-06-23 13:51:34,377 ShapeValidator.validateStringCone() - not valid row 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-06-23 13:51:34,379 ShapeValidator.validateStringCone() - not valid row 40.10 24.32 41.89 z5.26 9.23
+[INFO ] 2021-06-23 13:51:34,384 ConeParser.parseString() - Parsing data: [[D@769f71a9, [D@4c9f8c13, [D@5ae50ce6, [D@6f96c77, [D@be64738, [D@3ba9ad43, [D@49d904ec, [D@48e4374, [D@3d680b5a, [D@4b5d6a01, [D@4a22f9e2, [D@3c419631, [D@418e7838, [D@61230f6a, [D@3c130745, [D@cd3fee8]
