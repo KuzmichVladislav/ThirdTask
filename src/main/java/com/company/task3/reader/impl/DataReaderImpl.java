@@ -20,7 +20,7 @@ public class DataReaderImpl implements DataReader {
 
     static final Logger logger = LogManager.getLogger();
 
-    public static void main(String[] args) throws ShapeException {
+/*    public static void main(String[] args) throws ShapeException {
         DataReaderImpl a = new DataReaderImpl();
         List<String> b = new ArrayList<>();
         try {
@@ -30,7 +30,7 @@ public class DataReaderImpl implements DataReader {
         }
 
         System.out.println(b.toString());
-    }
+    }*/
 
     @Override
     public List<String> shapeList(String path) throws ShapeException {

@@ -1,6 +1,7 @@
 package com.company.task3.exception;
 
 public class ShapeException extends Exception {
+
     public ShapeException() {
         super();
     }
