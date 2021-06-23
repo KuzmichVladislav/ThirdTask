@@ -2,7 +2,7 @@ package com.company.task3.service;
 
 import com.company.task3.entity.Cone;
 
-public interface calculateParameters {
+public interface CalculateParameters {
 
     double calculateSurfaceArea(Cone designСone);
 

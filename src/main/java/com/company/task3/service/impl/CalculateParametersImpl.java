@@ -1,9 +1,9 @@
 package com.company.task3.service.impl;
 
 import com.company.task3.entity.Cone;
-import com.company.task3.service.calculateParameters;
+import com.company.task3.service.CalculateParameters;
 
-public class calculateParametersImpl implements calculateParameters {
+class CalculateParametersImpl implements CalculateParameters {
 
     @Override
     public double calculateSurfaceArea(Cone designСone) {

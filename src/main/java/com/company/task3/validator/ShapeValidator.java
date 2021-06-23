@@ -10,6 +10,9 @@ public class ShapeValidator {
     private static final String REGEX_STRING_CONE = "^(-?\\d+(\\.\\d*)?\\s){3}(\\d+(\\.\\d*)?\\s)(\\d+(\\.\\d*)?)$";
 
 
+    private ShapeValidator() {
+    }
+
     public static boolean validateStringCone(String string) {
         if (string.matches(REGEX_STRING_CONE)) {
             return true;
@@ -18,8 +21,5 @@ public class ShapeValidator {
             return false;
         }
 
-    }
-
-    private ShapeValidator() {
     }
 }

@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface DataReader {
 
-    List<String> ShapeList(String path) throws ShapeException;
+    List<String> shapeList(String path) throws ShapeException;
 }

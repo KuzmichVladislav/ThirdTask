@@ -6,7 +6,6 @@ import com.company.task3.validator.ShapeValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -21,8 +20,20 @@ public class DataReaderImpl implements DataReader {
 
     static final Logger logger = LogManager.getLogger();
 
+    public static void main(String[] args) throws ShapeException {
+        DataReaderImpl a = new DataReaderImpl();
+        List<String> b = new ArrayList<>();
+        try {
+            b = a.shapeList("src/main/resources/data/ConeDataFile.txt");
+        } catch (ShapeException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(b.toString());
+    }
+
     @Override
-    public List<String> ShapeList(String path) throws ShapeException {
+    public List<String> shapeList(String path) throws ShapeException {
 
         Path dataPath = Paths.get(path);
         List<String> result;
@@ -43,17 +54,5 @@ public class DataReaderImpl implements DataReader {
             throw new ShapeException(e);
         }
         return result;
-    }
-
-    public static void main(String[] args) throws ShapeException {
-        DataReaderImpl a = new DataReaderImpl();
-        List<String> b = new ArrayList<>();
-        try {
-            b = a.ShapeList("src/main/resources/data/ConeDataFile.txt");
-        } catch (ShapeException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(b.toString());
     }
 }
