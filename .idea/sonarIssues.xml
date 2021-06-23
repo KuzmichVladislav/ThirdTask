@@ -73,6 +73,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/RepositoryCreator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/ShapeFactory.java">
           <value>
             <set />
@@ -149,6 +154,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/log4j2.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/Java/EPAM Web/Tasks/src/main/java/com/company/task1/reader/impl/ArrayReaderImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/Java/EPAM Web/Tasks/src/test/java/com/company/task1/reader/impl/ArrayReaderImplTest.java">
           <value>
             <set />
           </value>

@@ -11,31 +11,7 @@ public class ConeParameters {
         this.surfaceArea = surfaceArea;
         this.generatrixLength = generatrixLength;
     }
-
-    public double getShapeVolume() {
-        return shapeVolume;
-    }
-
-    public void setShapeVolume(double shapeVolume) {
-
-        this.shapeVolume = shapeVolume;
-    }
-
-    public double getSurfaceArea() {
-        return surfaceArea;
-    }
-
-    public void setSurfaceArea(double surfaceArea) {
-        this.surfaceArea = surfaceArea;
-    }
-
-    public double getGeneratrixLength() {
-        return generatrixLength;
-    }
-
-    public void setGeneratrixLength(double generatrixLength) {
-        this.generatrixLength = generatrixLength;
-    }
+    
 
     @Override
     public boolean equals(Object o) {

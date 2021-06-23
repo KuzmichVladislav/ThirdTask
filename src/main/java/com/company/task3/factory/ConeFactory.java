@@ -17,13 +17,19 @@ public class ConeFactory {
         return new Cone(base, radius, height);
     }
 
-    public List<Cone> createShapeList(List<double[]> params) {
+    public Cone createShape(double[] params) {
+        Point base = new Point(params[0], params[1], params[2]);
+        Cone cone = new Cone(base, params[3], params[4]);
+        return cone;
+    }
+
+    public List<Cone> createShapeList(List<double[]> paramsList) {
         List<Cone> coneList = new ArrayList<>();
-        for (double[] p : params) {
-            Point base = new Point(p[0], p[1], p[2]);
-            Cone cone = new Cone(base, p[3], p[4]);
-            coneList.add(cone);
+        for (double[] p : paramsList) {
+            coneList.add(createShape(p));
         }
         return new ArrayList<>();
     }
+
+
 }
