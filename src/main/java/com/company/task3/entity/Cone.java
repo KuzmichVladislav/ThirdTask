@@ -1,17 +1,20 @@
 package com.company.task3.entity;
 
+import com.company.task3.util.ConeIdGenerator;
 
 public class Cone extends Shape {
+
+    ConeIdGenerator generatorId = new ConeIdGenerator();
     private Point base;
     private long coneId;
     private double radius;
     private double height;
 
-
     public Cone(Point base, double radius, double height) {
         this.base = base;
         this.radius = radius;
         this.height = height;
+        coneId = generatorId.generateId();
     }
 
     public Point getBase() {
@@ -40,14 +43,24 @@ public class Cone extends Shape {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Cone cone = (Cone) o;
 
-        if (coneId != cone.coneId) return false;
-        if (Double.compare(cone.radius, radius) != 0) return false;
-        if (Double.compare(cone.height, height) != 0) return false;
+        if (coneId != cone.coneId) {
+            return false;
+        }
+        if (Double.compare(cone.radius, radius) != 0) {
+            return false;
+        }
+        if (Double.compare(cone.height, height) != 0) {
+            return false;
+        }
         return base != null ? base.equals(cone.base) : cone.base == null;
     }
 

@@ -9,7 +9,6 @@ public class ShapeValidator {
 
     private static final String REGEX_STRING_CONE = "^(-?\\d+(\\.\\d*)?\\s){3}(\\d+(\\.\\d*)?\\s)(\\d+(\\.\\d*)?)$";
 
-
     private ShapeValidator() {
     }
 
@@ -17,7 +16,7 @@ public class ShapeValidator {
         if (string.matches(REGEX_STRING_CONE)) {
             return true;
         } else {
-            logger.warn("not valid row " + string);
+            //  logger.warn("this row is not valid: " + string);
             return false;
         }
 

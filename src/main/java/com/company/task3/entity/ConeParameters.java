@@ -11,17 +11,24 @@ public class ConeParameters {
         this.surfaceArea = surfaceArea;
         this.generatrixLength = generatrixLength;
     }
-    
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         ConeParameters that = (ConeParameters) o;
 
-        if (Double.compare(that.shapeVolume, shapeVolume) != 0) return false;
-        if (Double.compare(that.surfaceArea, surfaceArea) != 0) return false;
+        if (Double.compare(that.shapeVolume, shapeVolume) != 0) {
+            return false;
+        }
+        if (Double.compare(that.surfaceArea, surfaceArea) != 0) {
+            return false;
+        }
         return Double.compare(that.generatrixLength, generatrixLength) == 0;
     }
 

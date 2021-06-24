@@ -26,10 +26,10 @@ public class ConeFactory {
     public List<Cone> createShapeList(List<double[]> paramsList) {
         List<Cone> coneList = new ArrayList<>();
         for (double[] p : paramsList) {
-            coneList.add(createShape(p));
+            Point base = new Point(p[0], p[1], p[2]);
+            Cone cone = new Cone(base, p[3], p[4]);
+            coneList.add(cone);
         }
-        return new ArrayList<>();
+        return coneList;
     }
-
-
 }

@@ -1,7 +1,5 @@
 package com.company.task3.parser;
 
-import com.company.task3.exception.ShapeException;
-import com.company.task3.reader.impl.DataReaderImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,11 +13,11 @@ public class ConeParser {
 
     private static final String REGEX_SPLIT_CONE = "\\p{Punct}*\\s+";
 
-/*    public static void main(String[] args) throws ShapeException {
+    /*    public static void main(String[] args) throws ShapeException {
         DataReaderImpl a = new DataReaderImpl();
         List<String> b = new ArrayList<>();
         try {
-            b = a.shapeList("src/main/resources/data/ConeDataFile.txt");
+            b = a.shapeList("src/main/resources/data/coneDataFile.txt");
         } catch (ShapeException e) {
             e.printStackTrace();
         }
@@ -35,7 +33,6 @@ public class ConeParser {
         }
 
     }*/
-
     public List<double[]> parseString(List<String> shapeStringList) {
         List<double[]> shapeDoubleList = new ArrayList<>();
         for (String s : shapeStringList) {
@@ -43,7 +40,7 @@ public class ConeParser {
             double[] arrayOfDoubles = Stream.of(splited).mapToDouble(Double::parseDouble).toArray();
             shapeDoubleList.add(arrayOfDoubles);
         }
-        logger.info("Parsing data: " + shapeDoubleList.toString());
+        //  logger.info("Parsing data: " + shapeDoubleList.toString());
         return shapeDoubleList;
     }
 

@@ -20,4 +20,8 @@ public class ConeRepository {
     public Cone get(int index) {
         return cones.get(index);
     }
+
+    public int size() {
+        return cones.size();
+    }
 }
