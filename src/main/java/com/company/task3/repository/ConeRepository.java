@@ -9,6 +9,14 @@ public class ConeRepository {
 
     private List<Cone> cones = new ArrayList<>();
 
+    private static class SingletonHolder {
+        private static final ConeRepository INSTANCE = new ConeRepository();
+    }
+
+    public static ConeRepository getInstance() {
+        return SingletonHolder.INSTANCE;
+    }
+
     public boolean add(Cone cone) {
         return cones.add(cone);
     }
@@ -20,4 +28,5 @@ public class ConeRepository {
     public Cone get(int index) {
         return cones.get(index);
     }
+    
 }

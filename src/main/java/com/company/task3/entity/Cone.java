@@ -1,17 +1,26 @@
 package com.company.task3.entity;
 
 
-public class Cone extends Shape {
+import com.company.task3.util.ConeIdGenerator;
+
+public class Cone {
     private Point base;
     private long coneId;
     private double radius;
     private double height;
 
+    public Cone() {
+    }
 
     public Cone(Point base, double radius, double height) {
         this.base = base;
         this.radius = radius;
         this.height = height;
+        this.coneId = ConeIdGenerator.generateConeId();
+    }
+
+    public long getConeId() {
+        return coneId;
     }
 
     public Point getBase() {
