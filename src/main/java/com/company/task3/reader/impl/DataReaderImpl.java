@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -20,18 +19,17 @@ public class DataReaderImpl implements DataReader {
 
     static final Logger logger = LogManager.getLogger();
 
-/*    public static void main(String[] args) throws ShapeException {
+    /*    public static void main(String[] args) throws ShapeException {
         DataReaderImpl a = new DataReaderImpl();
         List<String> b = new ArrayList<>();
         try {
-            b = a.shapeList("src/main/resources/data/ConeDataFile.txt");
+            b = a.shapeList("src/main/resources/data/coneDataFile.txt");
         } catch (ShapeException e) {
             e.printStackTrace();
         }
 
         System.out.println(b.toString());
     }*/
-
     @Override
     public List<String> shapeList(String path) throws ShapeException {
 

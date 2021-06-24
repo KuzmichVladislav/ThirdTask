@@ -52,4 +52,5 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <name>com.company.task3</name>
 </project>
