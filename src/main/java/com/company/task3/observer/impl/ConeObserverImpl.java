@@ -18,11 +18,14 @@ public class ConeObserverImpl implements ConeObserver {
         ConeWarehouse coneWarehouse = ConeWarehouse.getInstance();
         CalculateParametersImpl calculateParameters = new CalculateParametersImpl();
         Cone cone = (Cone) coneEvent.getSource();
+
         double shapeVolume = calculateParameters.calculateShapeVolume(cone);
         double generatrixLength = calculateParameters.calculateGeneratrixLength(cone);
         double surfaceArea = calculateParameters.calculateSurfaceArea(cone);
+
         ConeParameter parameters = new ConeParameter(shapeVolume, surfaceArea, generatrixLength);
         coneWarehouse.put(cone.getConeId(), parameters);
+
         logger.info("parameters Cone was update: " + cone);
     }
 }

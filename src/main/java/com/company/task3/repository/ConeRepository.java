@@ -9,10 +9,6 @@ public class ConeRepository {
 
     private List<Cone> cones = new ArrayList<>();
 
-    private static class SingletonHolder {
-        private static final ConeRepository INSTANCE = new ConeRepository();
-    }
-
     public static ConeRepository getInstance() {
         return SingletonHolder.INSTANCE;
     }
@@ -31,5 +27,9 @@ public class ConeRepository {
 
     public int size() {
         return cones.size();
+    }
+
+    private static class SingletonHolder {
+        private static final ConeRepository INSTANCE = new ConeRepository();
     }
 }

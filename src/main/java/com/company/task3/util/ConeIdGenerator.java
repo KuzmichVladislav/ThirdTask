@@ -4,10 +4,10 @@ public class ConeIdGenerator {
 
     public static long coneId = 0;
 
-    public static long generateConeId() {
-        return ++coneId;
+    private ConeIdGenerator() {
     }
 
-    private ConeIdGenerator() {
+    public static long generateConeId() {
+        return ++coneId;
     }
 }

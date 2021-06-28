@@ -7,11 +7,7 @@ import java.util.Optional;
 public class ConeWarehouse {
     private final Map<Long, ConeParameter> parameters = new HashMap<>();
 
-    public static class SingletonHolder {
-        private static final ConeWarehouse INSTANCE = new ConeWarehouse();
-
-        private SingletonHolder() {
-        }
+    private ConeWarehouse() {
     }
 
     public static ConeWarehouse getInstance() {
@@ -32,6 +28,10 @@ public class ConeWarehouse {
         return (coneParameter != null ? Optional.of(coneParameter) : Optional.empty());
     }
 
-    private ConeWarehouse() {
+    public static class SingletonHolder {
+        private static final ConeWarehouse INSTANCE = new ConeWarehouse();
+
+        private SingletonHolder() {
+        }
     }
 }

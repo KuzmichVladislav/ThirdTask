@@ -1,0 +1,4 @@
+[WARN ] 2021-06-28 12:53:46,593 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-06-28 12:53:46,610 ShapeValidator.validateStringCone() - this row is not valid: 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-06-28 12:53:46,611 ShapeValidator.validateStringCone() - this row is not valid: 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-06-28 12:53:46,611 ShapeValidator.validateStringCone() - this row is not valid: 40.10 24.32 41.89 z5.26 9.23

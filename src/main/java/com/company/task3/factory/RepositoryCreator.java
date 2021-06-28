@@ -1,7 +1,6 @@
 package com.company.task3.factory;
 
 import com.company.task3.entity.Cone;
-import com.company.task3.exception.ShapeException;
 import com.company.task3.repository.ConeRepository;
 
 import java.util.List;
