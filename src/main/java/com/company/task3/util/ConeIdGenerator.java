@@ -7,4 +7,7 @@ public class ConeIdGenerator {
     public static long generateConeId() {
         return ++coneId;
     }
+
+    private ConeIdGenerator() {
+    }
 }

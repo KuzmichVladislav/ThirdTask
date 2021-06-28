@@ -7,9 +7,4 @@ public enum ConeComparator {
     HEIGHT,
     SURFACE_AREA,
     GENERATRIX_LENGTH;
-
-    // public Comparator<Cone> comparator() {
-    //     return
-    //  }
-
 }

@@ -28,4 +28,7 @@ public class ConeWarehouse {
         ConeParameter coneParameter = parameters.get(id);
         return (coneParameter != null ? Optional.of(coneParameter) : Optional.empty());
     }
+
+    private ConeWarehouse() {
+    }
 }
