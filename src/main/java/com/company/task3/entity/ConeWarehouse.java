@@ -9,6 +9,9 @@ public class ConeWarehouse {
 
     public static class SingletonHolder {
         private static final ConeWarehouse INSTANCE = new ConeWarehouse();
+
+        private SingletonHolder() {
+        }
     }
 
     public static ConeWarehouse getInstance() {
