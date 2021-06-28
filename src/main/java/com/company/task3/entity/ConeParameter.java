@@ -2,9 +2,9 @@ package com.company.task3.entity;
 
 public class ConeParameter {
 
-    private double shapeVolume;
-    private double surfaceArea;
-    private double generatrixLength;
+    private final double shapeVolume;
+    private final double surfaceArea;
+    private final double generatrixLength;
 
     public ConeParameter(double shapeVolume, double surfaceArea, double generatrixLength) {
         this.shapeVolume = shapeVolume;

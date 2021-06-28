@@ -163,6 +163,41 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/ConeSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/GeneratrixLengthSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/HeightSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/IdConeSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/RadiusSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/ShapeVolumeSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/SurfaceAreaSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/CalculateParameters.java">
           <value>
             <set />
@@ -214,6 +249,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/resources/log4j2.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/repository/ConeRepositoryTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/service/impl/CalculateParametersImplTest.java">
           <value>
             <set />
           </value>

@@ -13,6 +13,7 @@ public class Cone implements ConeObservable {
     private double height;
     private ConeObserver observer;
 
+
     public Cone() {
     }
 
@@ -52,6 +53,25 @@ public class Cone implements ConeObservable {
     }
 
     @Override
+    public void attach(ConeObserver observer) {
+        this.observer = observer;
+    }
+
+    @Override
+    public void detach(ConeObserver observer) {
+        this.observer = null;
+    }
+
+    @Override
+    public void notifyObserver() {
+        if (observer == null) {
+            return;
+        }
+        ConeEvent coneEvent = new ConeEvent(this);
+        observer.updateParameters(coneEvent);
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -86,24 +106,5 @@ public class Cone implements ConeObservable {
         sb.append(", height=").append(height);
         sb.append('}');
         return sb.toString();
-    }
-
-    @Override
-    public void attach(ConeObserver observer) {
-        this.observer = observer;
-    }
-
-    @Override
-    public void detach(ConeObserver observer) {
-        this.observer = null;
-    }
-
-    @Override
-    public void notifyObserver() {
-        if (observer == null) {
-            return;
-        }
-        ConeEvent coneEvent = new ConeEvent(this);
-        observer.updateParameters(coneEvent);
     }
 }
