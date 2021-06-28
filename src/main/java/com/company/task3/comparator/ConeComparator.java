@@ -1,9 +1,5 @@
 package com.company.task3.comparator;
 
-import com.company.task3.entity.Cone;
-
-import java.util.Comparator;
-
 public enum ConeComparator {
     ID,
     POINT,
@@ -12,8 +8,8 @@ public enum ConeComparator {
     SURFACE_AREA,
     GENERATRIX_LENGTH;
 
-    public Comparator<Cone> comparator() {
-        return
-    }
+    // public Comparator<Cone> comparator() {
+    //     return
+    //  }
 
 }
