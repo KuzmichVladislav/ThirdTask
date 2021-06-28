@@ -13,26 +13,6 @@ public class ConeParser {
 
     private static final String REGEX_SPLIT_CONE = "\\p{Punct}*\\s+";
 
-    /*    public static void main(String[] args) throws ShapeException {
-        DataReaderImpl a = new DataReaderImpl();
-        List<String> b = new ArrayList<>();
-        try {
-            b = a.shapeList("src/main/resources/data/coneDataFile.txt");
-        } catch (ShapeException e) {
-            e.printStackTrace();
-        }
-
-        ConeParser d = new ConeParser();
-        List<double[]> c = d.parseString(b);
-
-        for (double[] tab : c) {
-            for (double i : tab) {
-                System.out.print(i + " ");
-            }
-            System.out.println();
-        }
-
-    }*/
     public List<double[]> parseString(List<String> shapeStringList) {
         List<double[]> shapeDoubleList = new ArrayList<>();
         for (String s : shapeStringList) {
@@ -40,7 +20,7 @@ public class ConeParser {
             double[] arrayOfDoubles = Stream.of(splited).mapToDouble(Double::parseDouble).toArray();
             shapeDoubleList.add(arrayOfDoubles);
         }
-        //  logger.info("Parsing data: " + shapeDoubleList.toString());
+        logger.info("Parsing data: " + shapeDoubleList.toString());
         return shapeDoubleList;
     }
 

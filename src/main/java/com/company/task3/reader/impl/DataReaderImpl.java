@@ -19,19 +19,8 @@ public class DataReaderImpl implements DataReader {
 
     static final Logger logger = LogManager.getLogger();
 
-    /*    public static void main(String[] args) throws ShapeException {
-        DataReaderImpl a = new DataReaderImpl();
-        List<String> b = new ArrayList<>();
-        try {
-            b = a.shapeList("src/main/resources/data/coneDataFile.txt");
-        } catch (ShapeException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(b.toString());
-    }*/
     @Override
-    public List<String> shapeList(String path) throws ShapeException {
+    public List<String> coneList(String path) throws ShapeException {
 
         Path dataPath = Paths.get(path);
         List<String> result;

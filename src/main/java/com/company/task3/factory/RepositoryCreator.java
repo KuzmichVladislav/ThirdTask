@@ -9,9 +9,8 @@ import java.util.List;
 public class RepositoryCreator {
 
     public ConeRepository createRepository(ConeRepository repository, List<Cone> cones) throws ShapeException {
-        //repository = new ConeRepository();
         for (Cone cone : cones) {
-            // cone.setConeId();
+
             repository.add(cone);
         }
         return repository;

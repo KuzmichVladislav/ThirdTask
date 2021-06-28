@@ -16,7 +16,7 @@ public class Main {
         ConeFactory factory = new ConeFactory();
         RepositoryCreator repositoryCreator = new RepositoryCreator();
         ConeRepository cones = new ConeRepository();
-        repositoryCreator.createRepository(cones, factory.createShapeList(parser.parseString(reader.shapeList("src/main/resources/data/coneDataFile.txt"))));
+        repositoryCreator.createRepository(cones, factory.createConeList(parser.parseString(reader.coneList("src/main/resources/data/coneDataFile.txt"))));
         for (int i = 0; i < cones.size(); i++) {
             System.out.println(cones.get(i));
         }

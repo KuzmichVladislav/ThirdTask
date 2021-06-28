@@ -4,14 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class Warehouse {
-    private Map<Long, ConeParameter> parameters = new HashMap<>();
+public class ConeWarehouse {
+    private final Map<Long, ConeParameter> parameters = new HashMap<>();
 
     public static class SingletonHolder {
-        private static final Warehouse INSTANCE = new Warehouse();
+        private static final ConeWarehouse INSTANCE = new ConeWarehouse();
     }
 
-    public static Warehouse getInstance() {
+    public static ConeWarehouse getInstance() {
         return SingletonHolder.INSTANCE;
     }
 

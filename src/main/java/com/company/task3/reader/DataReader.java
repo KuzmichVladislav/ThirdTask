@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface DataReader {
 
-    List<String> shapeList(String path) throws ShapeException;
+    List<String> coneList(String path) throws ShapeException;
 }
