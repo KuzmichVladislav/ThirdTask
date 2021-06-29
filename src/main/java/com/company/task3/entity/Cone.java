@@ -1,18 +1,18 @@
 package com.company.task3.entity;
 
-
 import com.company.task3.observer.ConeEvent;
 import com.company.task3.observer.ConeObservable;
 import com.company.task3.observer.ConeObserver;
+import com.company.task3.observer.impl.ConeObserverImpl;
 import com.company.task3.util.ConeIdGenerator;
 
 public class Cone implements ConeObservable {
+
     private Point base;
     private long coneId;
     private double radius;
     private double height;
-    private ConeObserver observer;
-
+    private ConeObserver observer = new ConeObserverImpl();
 
     public Cone() {
     }
@@ -34,6 +34,7 @@ public class Cone implements ConeObservable {
 
     public void setBase(Point base) {
         this.base = base;
+        notifyObserver();
     }
 
     public double getRadius() {
@@ -42,6 +43,7 @@ public class Cone implements ConeObservable {
 
     public void setRadius(double radius) {
         this.radius = radius;
+        notifyObserver();
     }
 
     public double getHeight() {
@@ -50,6 +52,7 @@ public class Cone implements ConeObservable {
 
     public void setHeight(double height) {
         this.height = height;
+        notifyObserver();
     }
 
     @Override
@@ -73,14 +76,24 @@ public class Cone implements ConeObservable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Cone cone = (Cone) o;
 
-        if (coneId != cone.coneId) return false;
-        if (Double.compare(cone.radius, radius) != 0) return false;
-        if (Double.compare(cone.height, height) != 0) return false;
+        if (coneId != cone.coneId) {
+            return false;
+        }
+        if (Double.compare(cone.radius, radius) != 0) {
+            return false;
+        }
+        if (Double.compare(cone.height, height) != 0) {
+            return false;
+        }
         return base != null ? base.equals(cone.base) : cone.base == null;
     }
 

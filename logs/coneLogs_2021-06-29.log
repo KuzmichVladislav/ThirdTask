@@ -1,0 +1,6 @@
+[WARN ] 2021-06-29 22:27:36,714 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-06-29 22:27:36,725 ShapeValidator.validateStringCone() - this row is not valid: 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-06-29 22:27:36,728 ShapeValidator.validateStringCone() - this row is not valid: 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-06-29 22:27:36,730 ShapeValidator.validateStringCone() - this row is not valid: 40.10 24.32 41.89 z5.26 9.23
+[INFO ] 2021-06-29 22:27:36,757 ConeParser.parseString() - Parsing data: [[D@4d15107f, [D@7b4c50bc, [D@5884a914, [D@50378a4, [D@60f00693, [D@79207381, [D@491b9b8, [D@1a4927d6, [D@7a6d7e92, [D@aba625, [D@97e93f1, [D@5a5a729f, [D@4b520ea8, [D@16150369, [D@6b09fb41, [D@624ea235]
+[INFO ] 2021-06-29 22:27:36,772 ConeObserverImpl.updateParameters() - parameters Cone was update: Cone{base=Point{x=9.21, y=3.17, z=26.4}, coneId=2, radius=19.21, height=58.6}

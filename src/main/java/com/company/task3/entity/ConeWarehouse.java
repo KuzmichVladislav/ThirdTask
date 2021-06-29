@@ -5,13 +5,18 @@ import java.util.Map;
 import java.util.Optional;
 
 public class ConeWarehouse {
+
+    private static ConeWarehouse mInstance;
     private final Map<Long, ConeParameter> parameters = new HashMap<>();
 
     private ConeWarehouse() {
     }
 
     public static ConeWarehouse getInstance() {
-        return SingletonHolder.INSTANCE;
+        if (mInstance == null) {
+            mInstance = new ConeWarehouse();
+        }
+        return mInstance;
     }
 
     public ConeParameter put(long id, ConeParameter parameter) {
@@ -26,13 +31,5 @@ public class ConeWarehouse {
     public Optional<ConeParameter> get(long id) {
         ConeParameter coneParameter = parameters.get(id);
         return (coneParameter != null ? Optional.of(coneParameter) : Optional.empty());
-    }
-
-    public static class SingletonHolder {
-        private static final ConeWarehouse INSTANCE = new ConeWarehouse();
-
-        private SingletonHolder() {
-        }
-
     }
 }

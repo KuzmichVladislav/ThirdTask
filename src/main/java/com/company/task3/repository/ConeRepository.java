@@ -2,13 +2,15 @@ package com.company.task3.repository;
 
 import com.company.task3.entity.Cone;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class ConeRepository {
 
     private final List<Cone> cones = new ArrayList<>();
 
-    private ConeRepository() {
+    public ConeRepository() {
     }
 
     public static ConeRepository getInstance() {
@@ -42,11 +44,15 @@ public class ConeRepository {
     }
 
     public List<Cone> sort(Comparator<? super Cone> comparator) {
-        SortedSet<Cone> sortedCones = new TreeSet<>(comparator);
-        return new ArrayList<>(sortedCones);
+        //SortedSet<Cone> sortedCones = new TreeSet<>(comparator);
+        //return new ArrayList<>(sortedCones);
+        List<Cone> coneList = new ArrayList<>(cones);
+        coneList.sort(comparator);
+        return coneList;
     }
 
     private static class SingletonHolder {
+
         private static final ConeRepository INSTANCE = new ConeRepository();
     }
 }

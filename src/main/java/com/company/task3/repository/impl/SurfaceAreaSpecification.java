@@ -6,6 +6,7 @@ import com.company.task3.service.CalculateParameters;
 import com.company.task3.service.impl.CalculateParametersImpl;
 
 public class SurfaceAreaSpecification implements ConeSpecification {
+
     private final double from;
 
     public SurfaceAreaSpecification(double from) {

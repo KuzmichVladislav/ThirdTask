@@ -4,6 +4,7 @@ import com.company.task3.entity.Cone;
 import com.company.task3.repository.ConeSpecification;
 
 public class IdConeSpecification implements ConeSpecification {
+
     private final long from;
     private final long to;
 

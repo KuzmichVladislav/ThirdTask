@@ -4,6 +4,7 @@ import com.company.task3.entity.Cone;
 import com.company.task3.repository.ConeSpecification;
 
 public class RadiusSpecification implements ConeSpecification {
+
     private final double from;
     private final double to;
 
