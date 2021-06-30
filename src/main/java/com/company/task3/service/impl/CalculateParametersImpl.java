@@ -18,6 +18,6 @@ public class CalculateParametersImpl implements CalculateParameters {
 
     @Override
     public double calculateGeneratrixLength(Cone designСone) {
-        return designСone.getRadius() * designСone.getRadius() + designСone.getHeight() * designСone.getHeight();
+        return Math.sqrt(designСone.getRadius() * designСone.getRadius() + designСone.getHeight() * designСone.getHeight());
     }
 }

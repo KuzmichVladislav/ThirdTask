@@ -14,10 +14,9 @@ public enum ConeComparator implements Comparator<Cone> {
     POINT {
         @Override
         public int compare(Cone o1, Cone o2) {
-            int result = Double.compare(o1.getBase().getX(), o2.getBase().getX())
+            return Double.compare(o1.getBase().getX(), o2.getBase().getX())
                     + Double.compare(o1.getBase().getY(), o2.getBase().getY())
                     + Double.compare(o1.getBase().getZ(), o2.getBase().getZ());
-            return result;
         }
     },
     RADIUS {

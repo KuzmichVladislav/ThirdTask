@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ThirdTask" />
         <module name="Task3" />
+        <module name="ThirdTask1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

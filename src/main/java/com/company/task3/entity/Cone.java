@@ -28,6 +28,10 @@ public class Cone implements ConeObservable {
         return coneId;
     }
 
+    public void setConeId(long coneId) {
+        this.coneId = coneId;
+    }
+
     public Point getBase() {
         return base;
     }
@@ -117,7 +121,7 @@ public class Cone implements ConeObservable {
         sb.append(", coneId=").append(coneId);
         sb.append(", radius=").append(radius);
         sb.append(", height=").append(height);
-        sb.append('}');
+        sb.append('}' + "\n");
         return sb.toString();
     }
 }

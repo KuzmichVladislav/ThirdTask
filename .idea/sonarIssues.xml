@@ -1,304 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-    <component name="issues">
-        <option name="index">
-            <map>
-                <entry key="/Dummy.txt">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="/a.dummy">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="/fragment.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/logs/coneLogs.log">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/logs/coneLogs_2021-06-22.log">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/pom.xml">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/comparator/ConeComparator.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Cone.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ConeParameter.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ConeParameters.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ConeWarehouse.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Parameter.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Point.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Shape.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ShapeParameters.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ShapeParametr.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Warehouse.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/exception/ShapeException.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/ConeFactory.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/RepositoryCreator.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/ShapeFactory.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/main/Main.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeEvent.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeIbservable.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeObservable.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeObserver.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/impl/ConeObserverImpl.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/parser/ArrayParser.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/parser/ConeParser.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/reader/DataReader.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/reader/impl/DataReaderImpl.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/ConeRepository.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/ConeSpecification.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/GeneratrixLengthSpecification.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/HeightSpecification.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/IdConeSpecification.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/RadiusSpecification.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/ShapeVolumeSpecification.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/SurfaceAreaSpecification.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/CalculateParameters.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/calculateParameters.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/calculateParametres.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/impl/calculateParametersImpl.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/util/ConeIdGenerator.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/util/IdGenerator.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/util/Util.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/validator/ShapeValidator.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/resources/data/ConeDataFile.txt">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/resources/data/arrayFile.txt">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/main/resources/log4j2.xml">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/comparator/ConeComparatorTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/entity/ConeWarehouseTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/entity/SingletonHolderTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/factory/ConeFactoryTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/observer/impl/ConeObserverImplTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/repository/ConeRepositoryTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/service/impl/CalculateParametersImplTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="E:/Java/EPAM Web/Tasks/src/main/java/com/company/task1/reader/impl/ArrayReaderImpl.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-                <entry key="E:/Java/EPAM Web/Tasks/src/test/java/com/company/task1/reader/impl/ArrayReaderImplTest.java">
-                    <value>
-                        <set />
-                    </value>
-                </entry>
-            </map>
-        </option>
-    </component>
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/logs/coneLogs.log">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/logs/coneLogs_2021-06-22.log">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/comparator/ConeComparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Cone.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ConeParameter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ConeParameters.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ConeWarehouse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Parameter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Point.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Shape.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ShapeParameters.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/ShapeParametr.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/entity/Warehouse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/exception/ShapeException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/ConeFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/ConeFactoryTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/RepositoryCreator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/factory/ShapeFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/main/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeEvent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeIbservable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeObservable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/ConeObserver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/observer/impl/ConeObserverImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/parser/ArrayParser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/parser/ConeParser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/reader/DataReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/reader/impl/DataReaderImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/ConeRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/ConeSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/GeneratrixLengthSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/HeightSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/IdConeSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/RadiusSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/ShapeVolumeSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/repository/impl/SurfaceAreaSpecification.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/CalculateParameters.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/calculateParameters.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/calculateParametres.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/impl/CalculateParametersImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/service/impl/calculateParametersImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/util/ConeIdGenerator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/util/IdGenerator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/util/Util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/company/task3/validator/ShapeValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/data/ConeDataFile.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/data/arrayFile.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/data/testConeDataFile.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/log4j2.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/comparator/ConeComparatorTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/entity/ConeWarehouseTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/entity/SingletonHolderTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/factory/ConeFactoryTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/observer/impl/ConeObserverImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/reader/impl/DataReaderImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/repository/ConeRepositoryTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/service/impl/CalculateParametersImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/company/task3/util/ConeIdGeneratorTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/Java/EPAM Web/Tasks/src/main/java/com/company/task1/reader/impl/ArrayReaderImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/Java/EPAM Web/Tasks/src/test/java/com/company/task1/reader/impl/ArrayReaderImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>
