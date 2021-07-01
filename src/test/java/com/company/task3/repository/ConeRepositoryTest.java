@@ -1,127 +1,68 @@
 package com.company.task3.repository;
 
-import com.company.task3.comparator.ConeComparator;
 import com.company.task3.entity.Cone;
-import com.company.task3.entity.ConeParameter;
-import com.company.task3.entity.Point;
-import com.sun.istack.internal.NotNull;
-import org.junit.Assert;
-import org.junit.Before;
+import com.company.task3.exception.ShapeException;
+import com.company.task3.factory.ConeFactory;
+import com.company.task3.factory.RepositoryCreator;
+import com.company.task3.parser.ConeParser;
+import com.company.task3.reader.DataReader;
+import com.company.task3.reader.impl.DataReaderImpl;
+import com.company.task3.repository.impl.*;
 import org.junit.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 
-import java.util.Arrays;
 import java.util.List;
 
-import static org.mockito.Mockito.*;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class ConeRepositoryTest {
 
-        private ConeRepository repository;
 
+    final String FILE_NAME = getClass().getResource("/data/coneDataFile.txt").getPath().replaceFirst("^/(.:/)", "$1");
+    DataReader reader = new DataReaderImpl();
+    ConeParser parser = new ConeParser();
+    ConeFactory factory = new ConeFactory();
+    RepositoryCreator repositoryCreator = new RepositoryCreator();
+    ConeRepository repository = new ConeRepository();
 
-        /*@NotNull
-        private final Statistic.TimeRange range = new Statistic.TimeRange(
-                new Timestamp(System.currentTimeMillis() - 31536000000L),
-                new Timestamp(System.currentTimeMillis()));*/
+    @Test
+    public void generatrixLengthSpecificationTest() throws ShapeException {
+        ConeSpecification s = new GeneratrixLengthSpecification(50);
+        repositoryCreator.createRepository(repository, factory.createConeList(parser.parseString(reader.coneList(FILE_NAME))));
+        final List<Cone> expected = repository.query(s);
+        assertThat(expected.size(), is(4));
+    }
 
-       // private final ConeComparator<> comparator = Comparator.comparing(Statistic::getRevenue);
+    @Test
+    public void heightSpecificationTest() throws ShapeException {
+        ConeSpecification s = new HeightSpecification(20, 50);
+        DataReader reader = new DataReaderImpl();
+        repositoryCreator.createRepository(repository, factory.createConeList(parser.parseString(reader.coneList(FILE_NAME))));
+        final List<Cone> expected = repository.query(s);
+        assertThat(expected.size(), is(12));
+    }
 
-       /* @NotNull
-        private PhoneModel samsung;
+    @Test
+    public void radiusSpecificationTest() throws ShapeException {
+        ConeSpecification s = new RadiusSpecification(3, 15);
+        repositoryCreator.createRepository(repository, factory.createConeList(parser.parseString(reader.coneList(FILE_NAME))));
+        final List<Cone> expected = repository.query(s);
+        assertThat(expected.size(), is(3));
+    }
 
-        @NotNull
-        private PhoneModel iphone;
-*/
-/*        @Before
-        public void before() {
-            initPhoneModels();
-            try {
-                String user = "postgres";
-                String password = "1";
-                String url = "jdbc:postgresql://localhost:5432/phones_magazine";
-                connection = DriverManager.getConnection(url, user, password);
-                repository = new StatisticRepositoryImpl(connection);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
+    @Test
+    public void shapeVolumeSpecificationTest() throws ShapeException {
+        ConeSpecification s = new ShapeVolumeSpecification(3000);
+        repositoryCreator.createRepository(repository, factory.createConeList(parser.parseString(reader.coneList(FILE_NAME))));
+        final List<Cone> expected = repository.query(s);
+        assertThat(expected.size(), is(12));
+    }
 
-        private void initPhoneModels() {
-            samsung = new PhoneModel();
-            samsung.setName("samsung");
-            iphone = new PhoneModel();
-            iphone.setName("iphone");
-        }
-
-        @After
-        public void after() {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-
-         * @see ru.javavision.jdbc.StatisticRepository#getStat(List, Statistic.TimeRange, Comparator).
-         */
-        @Test
-        public void whenModelIsNotSelectedThenReturnAllActiveModels() {
-            final List<Cone> result = repository.query(GeneratrixLengthSpecification);
-            assertThat(result.size(), is(3));
-        }
-
-        /**
-         * @see ru.javavision.jdbc.StatisticRepository#getStat(List, Statistic.TimeRange, Comparator).
-         */
-        @Test
-        public void whenSelectStatisticBySinglePhoneModelFor1YearThenReturnStatistic() {
-            final List<Statistic> result = repository.getStat(Collections.singletonList(samsung), range, comparator);
-            assertThat(result.get(0).getRevenue(), is(new BigDecimal("122000")));
-        }
-
-        /**
-         * @see ru.javavision.jdbc.StatisticRepository#getStat(List, Statistic.TimeRange, Comparator).
-         */
-        @Test
-        public void whenSelectStatisticBy2PhoneModelFor1YearThenReturnStatistic() {
-            final List<Statistic> result = repository.getStat(newArrayList(iphone, samsung), range, comparator);
-            assertThat(result.get(0).getRevenue(), is(new BigDecimal("90000")));
-            assertThat(result.get(1).getRevenue(), is(new BigDecimal("122000")));
-        }
-
-        /**
-         * @see ru.javavision.jdbc.StatisticRepository#getStat(List, Statistic.TimeRange, Comparator).
-         */
-        @Test
-        public void whenSelectStatisticBy2PhoneModelFor1YearWithInvertComparatorThenReturnStatisticDescendingRevenue() {
-            final Comparator<Statistic> descendingComparator = (o1, o2) -> o2.getRevenue().compareTo(o1.getRevenue());
-            final List<Statistic> result = repository.getStat(newArrayList(iphone, samsung), range, descendingComparator);
-            assertThat(result.get(0).getRevenue(), is(new BigDecimal("122000")));
-            assertThat(result.get(1).getRevenue(), is(new BigDecimal("90000")));
-        }
-
-        /**
-         * @see ru.javavision.jdbc.StatisticRepository#getStatRevenueLess(BigDecimal, Statistic.TimeRange, Comparator) .
-         */
-        @Test
-        public void whenSendRevenuesThresholdThenReturnStatisticForPhoneModelsWhichHaveRevenuesLessThreshold() {
-            final BigDecimal threshold = new BigDecimal("100000");
-            final List<Statistic> statistics = repository.getStatRevenueLess(threshold, range, comparator);
-            assertThat(statistics.size(), is(2));
-            assertThat(statistics.get(0).getRevenue(), is(new BigDecimal("65000")));
-            assertThat(statistics.get(1).getRevenue(), is(new BigDecimal("90000")));
-        }
-
-        /**
-         * @see ru.javavision.jdbc.StatisticRepository#getStatRevenueMore(BigDecimal, Statistic.TimeRange, Comparator).
-         */
-        @Test
-        public void whenSendRevenuesThresholdThenReturnStatisticForPhoneModelsWhichHaveRevenuesMoreThreshold() {
-            final BigDecimal threshold = new BigDecimal("90000");
-            final List<Statistic> statistics = repository.getStatRevenueMore(threshold, range, comparator);
-            assertThat(statistics.size(), is(2));
-        }
+    @Test
+    public void surfaceAreaSpecificationTest() throws ShapeException {
+        ConeSpecification s = new SurfaceAreaSpecification(1000);
+        repositoryCreator.createRepository(repository, factory.createConeList(parser.parseString(reader.coneList(FILE_NAME))));
+        final List<Cone> expected = repository.query(s);
+        assertThat(expected.size(), is(12));
+    }
+}
