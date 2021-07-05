@@ -1,5 +1,6 @@
 package com.company.task3.main;
 
+import com.company.task3.comparator.ConeComparator;
 import com.company.task3.entity.Cone;
 import com.company.task3.entity.ConeParameter;
 import com.company.task3.entity.ConeWarehouse;
@@ -26,9 +27,9 @@ public class Main {
         RepositoryCreator repositoryCreator = new RepositoryCreator();
         ConeRepository cones = new ConeRepository();
         repositoryCreator.createRepository(cones, factory.createConeList(parser.parseString(reader.coneList("src/main/resources/data/coneDataFile.txt"))));
-        /*for (int i = 0; i < cones.size(); i++) {
+        for (int i = 0; i < cones.size(); i++) {
             System.out.println(cones.get(i));
-        }*/
+        }
 
         CalculateParameters calculateParameters = new CalculateParametersImpl();
         ConeWarehouse coneWarehouse = ConeWarehouse.getInstance();
@@ -41,9 +42,9 @@ public class Main {
         System.out.println(calculateParameters.calculateGeneratrixLength(cones.get(1)));
         System.out.println(coneWarehouse.get(2));
 
-        /*for (int i = 0; i < cones.size(); i++) {
+        for (int i = 0; i < cones.size(); i++) {
             System.out.println(cones.sort(ConeComparator.RADIUS).get(i));
-        }*/
+        }
 
         ConeSpecification s = new GeneratrixLengthSpecification(1000);
         List<Cone> c1 = cones.query(s);

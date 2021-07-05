@@ -28,6 +28,71 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/entity/DemandDeposit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/entity/Deposit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/entity/TermDeposit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/handler/ConsoleDepositHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/handler/DepositHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/main/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/parser/AbstractDepositsBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/parser/DepositBuilderFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/parser/DepositsDomBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/parser/DepositsDomBuilderTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/parser/DepositsSaxBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/parser/DepositsStaxBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../SecondTask/src/main/java/com/company/task2/validator/DepositXMLValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/logs/coneLogs.log">
           <value>
             <set />

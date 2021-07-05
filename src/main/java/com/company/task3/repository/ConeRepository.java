@@ -44,8 +44,6 @@ public class ConeRepository {
     }
 
     public List<Cone> sort(Comparator<? super Cone> comparator) {
-        //SortedSet<Cone> sortedCones = new TreeSet<>(comparator);
-        //return new ArrayList<>(sortedCones);
         List<Cone> coneList = new ArrayList<>(cones);
         coneList.sort(comparator);
         return coneList;
