@@ -1,0 +1,27 @@
+[WARN ] 2021-08-02 15:31:11,515 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-08-02 15:31:11,535 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-08-02 15:31:11,538 ShapeValidator.validateStringCone() - this row is not valid: 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-08-02 15:31:11,540 ShapeValidator.validateStringCone() - this row is not valid: 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-08-02 15:31:11,542 ShapeValidator.validateStringCone() - this row is not valid: 40.10 24.32 41.89 z5.26 9.23
+[INFO ] 2021-08-02 15:31:11,559 ConeParser.parseString() - Parsing data: [[D@3fabf088, [D@1e392345, [D@12f3afb5, [D@4ced35ed, [D@2c22a348, [D@7bd69e82, [D@74d7184a, [D@51b01960, [D@6831d8fd, [D@27dc79f7, [D@6b85300e, [D@3aaf4f07, [D@5cbf9e9f, [D@18e8473e, [D@5a2f016d, [D@1a38ba58]
+[WARN ] 2021-08-02 15:31:11,576 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-08-02 15:31:11,577 ShapeValidator.validateStringCone() - this row is not valid: 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-08-02 15:31:11,579 ShapeValidator.validateStringCone() - this row is not valid: 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-08-02 15:31:11,580 ShapeValidator.validateStringCone() - this row is not valid: 40.10 24.32 41.89 z5.26 9.23
+[INFO ] 2021-08-02 15:31:11,584 ConeParser.parseString() - Parsing data: [[D@3a45c42a, [D@36dce7ed, [D@47a64f7d, [D@33d05366, [D@27a0a5a2, [D@7692cd34, [D@33aa93c, [D@32c0915e, [D@106faf11, [D@70f43b45, [D@26d10f2e, [D@10ad20cb, [D@7dd712e8, [D@2c282004, [D@22ee2d0, [D@7bfc3126]
+[WARN ] 2021-08-02 15:31:11,589 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-08-02 15:31:11,592 ShapeValidator.validateStringCone() - this row is not valid: 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-08-02 15:31:11,596 ShapeValidator.validateStringCone() - this row is not valid: 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-08-02 15:31:11,598 ShapeValidator.validateStringCone() - this row is not valid: 40.10 24.32 41.89 z5.26 9.23
+[INFO ] 2021-08-02 15:31:11,603 ConeParser.parseString() - Parsing data: [[D@53bc1328, [D@26f143ed, [D@3c1e3314, [D@4b770e40, [D@78e16155, [D@54a3ab8f, [D@1968a49c, [D@6a1ebcff, [D@19868320, [D@50b0bc4c, [D@c20be82, [D@13c612bd, [D@3ef41c66, [D@6b739528, [D@622ef26a, [D@41de5768]
+[WARN ] 2021-08-02 15:31:11,608 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-08-02 15:31:11,609 ShapeValidator.validateStringCone() - this row is not valid: 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-08-02 15:31:11,611 ShapeValidator.validateStringCone() - this row is not valid: 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-08-02 15:31:11,612 ShapeValidator.validateStringCone() - this row is not valid: 40.10 24.32 41.89 z5.26 9.23
+[INFO ] 2021-08-02 15:31:11,616 ConeParser.parseString() - Parsing data: [[D@28fa700e, [D@3d526ad9, [D@e041f0c, [D@6a175569, [D@11963225, [D@3f3c966c, [D@11ee02f8, [D@4102b1b1, [D@61a5b4ae, [D@3a71c100, [D@5b69fd74, [D@f325091, [D@437e951d, [D@77b325b3, [D@63a5e46c, [D@7e8e8651]
+[WARN ] 2021-08-02 15:31:11,622 ShapeValidator.validateStringCone() - this row is not valid: 2.47 -7.65 0.93 -7.27 14.78
+[WARN ] 2021-08-02 15:31:11,624 ShapeValidator.validateStringCone() - this row is not valid: 23.82 31.25 35.63e 33.41 39.31
+[WARN ] 2021-08-02 15:31:11,626 ShapeValidator.validateStringCone() - this row is not valid: 8.63 3.61 26.67 40.09 -16.56
+[WARN ] 2021-08-02 15:31:11,628 ShapeValidator.validateStringCone() - this row is not valid: 40.10 24.32 41.89 z5.26 9.23
+[INFO ] 2021-08-02 15:31:11,632 ConeParser.parseString() - Parsing data: [[D@271f18d3, [D@6bd51ed8, [D@61e3a1fd, [D@51abf713, [D@eadb475, [D@4d4d48a6, [D@315df4bb, [D@3fc08eec, [D@5cad8b7d, [D@7b02e036, [D@25243bc1, [D@1e287667, [D@2e6ee0bc, [D@4201a617, [D@467f77a5, [D@1bb9aa43]
+[WARN ] 2021-08-02 15:31:11,636 ShapeValidator.validateStringCone() - this row is not valid: 2.47 7.65 0.93 7.27 z14.78

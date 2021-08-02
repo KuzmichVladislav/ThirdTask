@@ -17,7 +17,6 @@ import static org.junit.Assert.assertThat;
 
 public class ConeRepositoryTest {
 
-
     final String FILE_NAME = getClass().getResource("/data/coneDataFile.txt").getPath().replaceFirst("^/(.:/)", "$1");
     DataReader reader = new DataReaderImpl();
     ConeParser parser = new ConeParser();

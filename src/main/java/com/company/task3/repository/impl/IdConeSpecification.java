@@ -15,7 +15,6 @@ public class IdConeSpecification implements ConeSpecification {
 
     @Override
     public boolean specify(Cone cone) {
-        boolean result = cone.getConeId() >= from && cone.getConeId() <= to;
-        return result;
+        return cone.getConeId() >= from && cone.getConeId() <= to;
     }
 }

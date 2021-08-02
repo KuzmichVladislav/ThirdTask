@@ -15,7 +15,6 @@ public class HeightSpecification implements ConeSpecification {
 
     @Override
     public boolean specify(Cone cone) {
-        boolean result = cone.getHeight() >= from && cone.getHeight() <= to;
-        return result;
+        return cone.getHeight() >= from && cone.getHeight() <= to;
     }
 }

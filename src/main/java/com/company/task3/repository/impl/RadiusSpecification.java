@@ -15,7 +15,6 @@ public class RadiusSpecification implements ConeSpecification {
 
     @Override
     public boolean specify(Cone cone) {
-        boolean result = cone.getRadius() >= from && cone.getRadius() <= to;
-        return result;
+        return cone.getRadius() >= from && cone.getRadius() <= to;
     }
 }

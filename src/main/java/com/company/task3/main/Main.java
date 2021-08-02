@@ -49,7 +49,6 @@ public class Main {
         ConeSpecification s = new GeneratrixLengthSpecification(1000);
         List<Cone> c1 = cones.query(s);
 
-
         System.out.println(c1);
 
     }

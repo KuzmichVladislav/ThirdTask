@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class DataReaderImplTest {
@@ -17,12 +17,12 @@ public class DataReaderImplTest {
 
     @Before
     public void setUp() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
     public void testConeList() throws Exception {
         List<String> result = dataReaderImpl.coneList(FILE_NAME);
-        Assert.assertEquals(Arrays.<String>asList("34.90 35.9 21.85 46.33 46.86"), result);
+        Assert.assertEquals(Collections.singletonList("34.90 35.9 21.85 46.33 46.86"), result);
     }
 }
